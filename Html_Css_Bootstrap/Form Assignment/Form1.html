@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-container {
+        background: white;
+        padding: 25px;
+        width: 500px;
+        border: 1px solid black;
+        box-shadow: rgba(0, 0, 0, 0.1);
+      }
+      h3,h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      label {
+        font-weight: bold;
+        text-align: left;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #aaa;
+        
+      }
+      button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        background: #ddd;
+        border: 1px solid #999;
+        cursor: pointer;
+      }
+      .login-text {
+        text-align: center;
+        margin-top: 12px;
+      }
+      .login-text a {
+        color: blue;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <h1><strong>Register </strong></h1>
+
+        <h3>Kindly fill in this form to register.</h3>
+        <br />
+        <label for=" name">Username</label><br />
+        <input type="text" name="name" placeholder="Enter username" /><br />
+        <label for="Emailid">Email</label><br />
+        <input type="email" name="Emailid" placeholder="Enter Email" /><br />
+        <label for="password"> Password</label><br />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter Password"
+        /><br />
+        <label for="repeatpassword">Repeat Password</label><br />
+        <input type="password"name="repeatpassword"
+          placeholder="Repeat Password"/><br />
+        <button type="submit" name="Register">Register</button>
+      </form>
+      <div class="login-text">
+        <p>Already have an account? <a href="#">Log in.</a></p>
+      </div>
+    </div>
+  </body>
+</html>

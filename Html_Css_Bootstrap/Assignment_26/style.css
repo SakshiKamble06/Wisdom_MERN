@@ -1,24 +1,28 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("./Assets/bg.jpg");
-    background-size: cover;
-    background-position: center;
-    
+   
+     background: linear-gradient(to right, #ff9933, white, #138808);
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .container {
-    background: rgba(0, 0, 0, 0.6);
+    background-image: url("./Assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background: rgba(0, 0, 0, 0.6); */
     padding: 40px 20px;
     min-height: 80vh;
 }
 
 h1 {
-    color: orangered;
+    color: blue;
     font-size: 40px;
     margin-bottom: 10px;
+}
+.container h1{
+    color: brown;
 }
 h3{
     font-size: 20px;
@@ -30,6 +34,7 @@ P{
 .description {
     font-size: 18px;
     margin-bottom: 30px;
+    color: black;
 }
 
 .image-row {
@@ -44,6 +49,22 @@ P{
     border-radius: 10px;
     border: 3px solid white;
 }
+.center-list{
+    
+    text-align: center;
+    color: black;
+}
+.center-list ul {
+   /* list-style-type: style position 5px;; */
+   display: inline-block;
+   text-align: center;
+   list-style-type: square;
+   }
+   li{
+    color: black;
+    text-align: center;
+   }
+   
 
 footer {
      height: 50px;
