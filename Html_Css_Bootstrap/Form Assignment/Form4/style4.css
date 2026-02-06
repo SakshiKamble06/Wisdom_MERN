@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+  
+}
+.container{
+ padding: 30px;
+    width: 320px;
+    border-radius: 8px;
+}
+
+h1{
+ text-align: center;
+}
+input{
+border-radius: 4px;
+font-size: 12px;
+align-content:center;
+
+
+}
+a{
+    color: rgb(30, 30, 152);
+}
+.form4{
+    display:flex;
+    
+}
+.input-box{
+     display: flex;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}

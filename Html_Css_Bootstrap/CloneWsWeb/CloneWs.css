@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif ;
+}
+body{
+    background-color: rgb(210, 230, 228);
+}
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; 
+    background:(210,230,228) ;
+   position: sticky;
+    
+} 
+nav{
+    height: 80px;
+    background-color: (208);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+    left: 0px;
+
+}nav a{
+    margin:0 5px;
+    color: black;
+}
+.logoDiv{
+    font-size: 8px;
+    font-weight: bold;
+    color: rgba(53,130,127);
+  
+}
+ .Con-btn{
+  background-color:rgb(253, 102, 31);
+   border-radius: 3rem;
+   left:40px;
+   width: 25px;
+   height: 55px;
+   color: white;
+}
+#heroSection{
+    position: relative;
+    margin-top: 3rem;
+}
+
+.heroSction{
+    display: flex;
+    padding: 2rem;
+    padding-left:3rem;
+}
+.leftContent{
+    flex: 50%;
+}
+.badgeWhite{
+    background-color: white;
+    border-radius: 13px;
+    width: 180px;
+    padding: 15px;
+}
+.leftContent h1{
+    font-size: 3rem;
+    color: rgb(11, 107, 107);
+}
+.leftContent p{
+    font-size: 2rem;
+    color: rgb(11, 107, 107);
+
+}.orangeBTN{
+    background-color: orangered;
+    border-radius: 10rem;
+    width: 35%;
+    height: 8%;
+    margin: 20px;
+    padding:10px 15px;
+    font-size: medium;
+    color:white;
+}
+.greenBTN{
+    background-color: rgb(210, 207, 207);
+    border-radius: 10rem;
+    width: 35%;
+    height: 8%;
+    margin: 20px;
+    padding:10px 15px;
+    font-size: medium;
+    color: rgb(52, 189, 202);;
+
+}
+.greenBTN:hover{
+background:rgb(8, 47, 48);
+}
+
+.rightImage{
+    flex: 50%;
+    position: relative;
+}
+
+.girlImg{
+background-color: transparent;
+right: 120px;
+width: 500px;
+padding-left: 20px;
+   
+}
+.fileImg{
+background-color: transparent;
+mix-blend-mode: multiply;
+width: 100px;
+height: 120px;
+position: absolute;
+z-index: 5;
+top:40px;
+right: 10px;
+padding-top: 15px;
+}
+
+.contentAtCenter{
+    position: absolute;
+    left: 40%;
+    bottom: 45%;
+    background-color: rgba(255,255,255,0.3);
+    display: flex;
+    padding: 15px 30px;
+}
+.contentAtCenter h3{
+    font-size: x-large;
+}
+.contentAtCenter p{
+    font-size: large;
+
+}
+.contentAtCenter i{
+    font-size: 2rem;
+    padding: 10px;
+    /* background-color:red ; */
+}
+
+.imglogo{
+    padding: 30px;
+    width: 190px;
+    height: 150px;
+}
