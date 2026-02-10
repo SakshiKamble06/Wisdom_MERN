@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #444;
+  margin-top: 20px;
+}
+
+/* Menu Lists */
+.menu {
+  background: #ffe0b2;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.menu li {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background: #ff9800;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Highlight booked rows */
+.booked {
+  background: #ffcdd2;
+}
+
+/* Hover effect */
+table tr:hover {
+  background: #e0f7fa;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu li,
+  td, th {
+    font-size: 14px;
+  }
+}
