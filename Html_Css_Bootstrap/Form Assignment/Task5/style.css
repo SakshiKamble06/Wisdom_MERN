@@ -1,55 +1,54 @@
 *{
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-}body{
-background-color: linear-gradient(90deg rgb(61, 108, 61)  rgb(#8D9E15) )
-
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
-.main{
+
+.container{
     display: flex;
-   justify-content: center;
-    padding: 20px;
-    align-items: center;
-     width: 100vw;
+    width: 100vw;
     height: 100vh;
-}
-/*   left Side */
+    background: linear-gradient(to right, #21511c, rgb(120 ,141,32));
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px;
 
-.leftside{
-flex: 1;
-border-top-right-radius: 30%;
+}
+
+.card{
+    align-content: center;
+    width: 800px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 30px;
+   
+    
+    display: flex;
+}
+
+.left-content{
+    flex: 1;
+    /* border-radius: 30px; */
+    border-top-right-radius: 30%;
     border-bottom-right-radius: 30%;
     background-color:rgba(0,72,84);
     border: transparent;
     padding:20px;
     align-content: center;
     color: white;
-}
-.L-btn{
- background: transparent;
-  margin-top: 10px;
-width: 100px;
-height: 30px;
-align-content: center;
-}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-/* Right side Div */
-   
+}
 
 .right-form{
 flex: 1;
 padding: 20px 20px;
 margin-top: 40px;
 }
-input{
-     margin-top: 5px;
-    padding: 8px 65px;
-    margin-left: 20px;
-    background-color: rgb(207, 203, 203);
-    border: transparent;
 
-}
-.rightside-form h1{
+.left-content h2{
     font-weight: bold;
     align-content: center;
     margin-bottom: 20px;
@@ -57,13 +56,33 @@ input{
     margin-left: 40px;
     font-size: 40px;
 }
-.R-btn{
-    margin-top: 10px;
-    width: 100px;
-    height: 30px;
-    background: rgb(120, 188, 19);
+
+.left-content p{
     align-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 20px;
 }
+
+.btn{
+    padding: 8px 30px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-top: 35px;
+    margin-left:35%;
+}
+
+.right-form h1{
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 40px;
+    font-size: 40px;
+}
+
 .icon{
     align-content: center;
     margin-bottom: 20px;
@@ -79,9 +98,39 @@ input{
     color: rgb(13, 125, 184);
 
 
-}.right-form p{
+}
+
+.right-form h2{
+    font-weight: bold;
+    align-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-left: 35%;
+    font-size: 40px;
+}
+
+.right-form p{
     font-size: 18px;
     align-content: center;
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input{
+    margin-top: 5px;
+    padding: 8px 65px;
+    margin-left: 20px;
+    background-color: rgb(207, 203, 203);
+    border: transparent;
+}
+
+.btn-form{
+
+    padding: 8px 30px;
+    background-color:rgb(150, 188, 55);
+    border: transparent;
+    color: white;
+    margin-left:33%;
+    margin-bottom: 20px;
+    font-weight: bold;
 }

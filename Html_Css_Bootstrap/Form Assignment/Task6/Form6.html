@@ -3,44 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Form6</title>
-    <link rel="stylesheet" href="./from6.css">
+    <title>School Championship Registration </title>
+    <link rel="stylesheet" href="from6.css">
 </head>
 <body>
-    <div class=" container">
-         <div class="center">
-    <form >
-    <div class="longinput">
-    <h1>School Championship Registration </h1>
-    <label for="">School name:</label><br/>
-    <input type="text" required><br/>
+    <div class="container">
+        <div class="center">
+        <h2>School Championship Registration Form</h2>
+        <form action="post">
+            <label class="verify-label">School Name <span>*</span></label><br>
+            <input type="text" class="full-input">
+
+           
+
+            <label class="verify-label">Schooler Name <span>*</span></label>
+                <div class="name-row">
+                    <input type="text" placeholder="First">
+                    <input type="text" placeholder="Last">
+                </div>
+
+            <label class="verify-label">Parent Name <span>*</span></label>
+                <div class="name-row">
+                    <input type="text" placeholder="First">
+                    <input type="text" placeholder="Last">
+                </div>
+
+
+            <label class="verify-label">Parent Phone Number <span>*</span></label><br>
+            <input type="text" class="full-input">
+
+            <label class="verify-label">Parent Email <span>*</span></label><br>
+            <input type="email" class="full-input">
+
+            <label class="verify-label">Preffered Sport <span>*</span></label><br>
+            <input type="text" class="full-input">
+            
+            <div class="verification-section">
+
+    <label class="verify-label">Verification<span>*</span></label>
+
+    <div class="captcha-box">
+        <div class="left">
+            <input type="checkbox">
+            <span>I'm not a robot</span>
+        </div>
+
+        <div class="right">
+            <img src="./assest/captcha.png" alt="recaptcha">
+            <small>reCAPTCHA<br>Privacy · Terms</small>
+        </div>
     </div>
-   <div class="flex">
-    <label for="name"> Schooler name: </label><br/>
-    <input type="text" placeholder="First" required>
-    <input type="text" placeholder="Last" required><br/>
-    <label for="Parent"> Parents name:</label><br/>
-    <input type="text" placeholder="First" name="Parent" required>
-    <input type="text" placeholder="Last" required><br/>
+
+    <button class="submit-btn">
+         Submit
+    </button>
+
+        </form>
+        </div>
     </div>
-    <div class="longinput">
-        <label for=" number"> Parents phone:</label><br/>
-     <input type="text" placeholder="### ### ###"required><br/>
-     <label for="email">Parent Email:</label><br/>
-     <input type="tel" required><br/>
-     <label for="sport"></label>Preferred Sport:</label><br/>
-     <input type="text" required><br/>
-     </div>
- <div class="verify">    
-<label for=""> Verification </label><br/>
-<input type="checkbox" required>
-I'm not a robot
-</div>
-<img src=" " >
-       <button type="submit" > Submit</button>
- 
-</form>
-</div>
-</div>
 </body>
 </html>

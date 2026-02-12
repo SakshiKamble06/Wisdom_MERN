@@ -1,49 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Instagram Login</title>
-  <link rel="stylesheet" href="./Insta.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <title>Instagram Layout</title>
+    <link rel="stylesheet" href="./Insta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<div class="container">
- <!-- LEFT SECTION -->
-  <div class="left">
+<div class="main">
+    <!-- LEFT SECTION -->
+    <div class="left">
+     <!-- LOGO TOP LEFT -->
     <div class="insta-logo">
-  <img src="./logo.jpg" alt="phone mockup">
-    <h1> Instagram</h1></div>
-
-    <img src="./Insta.jpg" alt="InstaImage" class="phone">
-    
-    <h2>See everyday moments from<br>
-     your <span> close friends.</span>
-    </h2>
-  </div>
-
-  <!-- RIGHT SECTION -->
-  <div class="right">
-    <h3>Log into Instagram</h3>
-    <form></form>
-    <input type="text" placeholder="Mobile number, username or email">
-    <input type="password" placeholder="Password">
-
-    <button>Log in</button><br/>
-    <a href="#" class="forgot">Forgot password?</a></br>
-      <div class="or">
-                <div class="line"></div>
-                <span>OR</span>
-                <div class="line"></div>
+        <img src="./logo.jpeg" alt="phone mockup">
+       
+        <div class="image-box">
+            <img src="./Insta.jpg"  alt="friends">
+        </div>
+    </div>
+        <div class="text">
+            <div class="heading">
+                See everyday moments from
             </div>
-    <p class="fb">
-      <i class="fa-brands fa-facebook"></i> Log in with Facebook</p>
 
-    <p class="signup">Don't have an account? <span>Sign up</span></p>
-  </div>
+            <div class="highlight">
+                your close friends.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right">
+
+        <div class="login-box">
+
+            <div class="login-title">
+                Log into Instagram
+            </div>
+
+            <!-- FORM START -->
+            <form>
+
+                <div class="input-box">
+                    <input type="text"
+                           name="username"
+                           placeholder="Mobile number, username or email"
+                           required>
+                </div>
+
+                <div class="input-box">
+                    <input type="password"
+                           name="password"
+                           placeholder="Password"
+                           required>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    Log In
+                </button>
+
+            </form>
+            <!-- FORM END -->
+
+            <div class="forgot">
+                Forgot password?
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="fb-btn">
+                Log in with Facebook
+            </div>
+
+            <div class="signup">
+                Don't have an account? <span>Sign up</span>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
-</form>
+
 </body>
 </html>

@@ -7,31 +7,31 @@ body{
 
 .container{
     background: transparent;
-    height: 100vh;
-    width: 100wh;
+    height: 100%;
+    width: 100%;
     color: rgb(92, 19, 161);
+    padding: 10px;
 }
 
 .center{
     background: linear-gradient(to bottom,rgb(221, 146, 221),rgb(142, 190, 211));
     padding: 10px;
     margin: 0px 300px;
-    height: 100vh;
-    width: 55vw;
+    height: 100%;
+    width: 55%;
 }
 
 label{
     font-size: large; 
     font-weight: bold;
+    
 }
 
 
 input{
-    width: 300px;
-    height: 15px;
-    padding: 10px;
+    
     border: rgb(167, 194, 201);
-    margin-bottom: 15px;
+   
 
 }
 
@@ -49,8 +49,7 @@ input{
 
 /* Long inputs */
 .full-input {
-    width: 100px;
-    height: 50px;
+    width: 46vw;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -109,7 +108,7 @@ input{
     margin: auto;
 }
 
-.button {
+.submit-btn {
     margin-top: 10px;
     background: #1e73be;
     color: #fff;
@@ -119,10 +118,9 @@ input{
     border-radius: 4px;
     cursor: pointer;
     margin-left: 25vw;
-    align-items: center;
 }
 
-.button:hover {
+.submit-btn:hover {
     background: #155a96;
 }
 
