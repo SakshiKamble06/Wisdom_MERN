@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+<style>
+.card{
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    justify-content: center;
+    justify-items: center;
+    background: rgb(194, 33, 170);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.4s ease;
+}
+
+.card:hover{
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background: rgb(34, 34, 217);
+}
+.btn{
+    padding: 14px 35px;
+    border-radius: 40px;
+    background: linear-gradient(45deg,#ff416c,#ff4b2b);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+.loader{
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ccc;
+    border-top: 6px solid #1db954;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
+
+</style>
+</head>
+<body>
+    <!-- Hover Card Event -->
+    <div class="card">
+    <h3>Web Design</h3>
+    <p>Modern UI animations</p>
+</div> 
+<!-- Animation ON BUTTON -->
+<button class="btn">Explore</button>
+<h1>Loader Animation </h1>
+<div class="loader"> </div>
+</body>
+</html>
