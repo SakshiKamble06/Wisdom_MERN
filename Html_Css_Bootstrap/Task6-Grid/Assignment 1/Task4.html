@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 250px;
+            grid-template-rows: 70px 1fr 60px;
+            grid-template-areas:
+                "header header header"
+                "nav main aside"
+                "footer footer footer";
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: #bdc3c7;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">Header</header>
+        <!-- <div class="header">Header</div> -->
+        <nav class="nav">Navigation</nav>
+        <main  class="main">Main Content</main>
+        <aside class="aside">Aside Section</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+
+</body>
+</html>
