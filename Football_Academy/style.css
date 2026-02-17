@@ -3,10 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+body{
+    background: gray;
+}
 header{
-    width: 900px;
+    width: 1300px;
     height: 726px;
    }
    header h1{
@@ -19,7 +22,7 @@ header{
     display: flex;
     width: 80%;
     margin: 10px auto;
-    maring:60px
+    margin:60px;
 }
 .imgDiv img{
     width: 550px;
@@ -41,20 +44,66 @@ header{
     font-size: 16px;
 }
 .blackBox{
-    width: 1444px;
-    height: 422px; 
+    width: 1300px;
+    height: 300px; 
     color: white;
     background-color: black;
-    margin: 40px,auto;
+    margin-top: 10px;
+    justify-items: center;
+    justify-content: center;
+
 }
-p{
-    width: 1063px;
+ .blackBox h1{
+font-size: 45px;
+margin-top: 20px;
+
 }
 .blackBox a{
 color: rgb(128, 128,128);
-justify-items: center;
-align-items: center;
+margin-top: 100px;
+margin-bottom: 20px;
+padding: 500px;
+ 
+
+
+}
+.blackBox a :hover{
+    text-decoration: underline;
+    
 }
 .red{
-    color: (181, 50,50);
+    color:red;
 }
+.CoachSection{
+ 
+}
+.coachimg img{
+   width: 300px;
+   margin: 20px 80px;
+}
+.content{
+    margin-left: 80px;
+    margin-top: 45px;
+}
+.content h6{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(179, 4, 4, 0.767);
+}
+h4{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Saira  condensed;
+}
+.content p{
+    padding: 15px;
+}
+.CoachSection{
+display: flex;
+ width: 1100px;
+ height: 350px;
+
+}
+
+
