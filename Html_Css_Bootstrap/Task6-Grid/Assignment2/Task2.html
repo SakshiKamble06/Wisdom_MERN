@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   CodePen - Aesthetic blog layout (GRID)
+  </title>
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+  line-height: 1.4;
+  padding: 20px 40px;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 40px;
+}
+
+.blog-post {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.blog-post:hover {
+  transform: scale(1.05);
+}
+.blog-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-post .text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  writing-mode: vertical-lrl;
+}
+.blog-post .post-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+.blog-post .read-post {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.blog-post .read-post:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.post1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 7;
+}
+
+.post2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.post3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.post4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+.post5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+.access-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+.access-btn:hover {
+  background-color: #005bb5;
+}
+  </style>
+  <script>
+   window.console = window.console || function(t) {};
+  </script>
+ </head>
+ <body translate="no">
+  <div class="blog-posts">
+   <div class="blog-post post1">
+    <img alt="Blue water image" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"/>
+    <div class="text">
+     This is water
+    </div>
+   </div>
+   <div class="blog-post post2">
+    <img alt="Dark blue sky image" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"/>
+    <div class="text">
+     Staring at the horizon thinking the winter of my discontent
+    </div>
+    <a class="read-post" href="#">
+     READ POST
+    </a>
+   </div>
+   <div class="blog-post post3">
+    <img alt="Orange city sunset image" src="https://images.unsplash.com/photo-1513598830087-b0637f2b1d6b"/>
+    <div class="text">
+     Instagram is toxic but I keep posting
+    </div>
+   </div>
+   <div class="blog-post post4">
+    <img alt="Pink building image" src="https://images.unsplash.com/photo-1520315342629-f696c9093abd"/>
+    <div class="text">
+     Table for one please
+    </div>
+   </div>
+   <div class="blog-post post5">
+    <img alt="Red city skyline image" src="https://images.unsplash.com/photo-1511735116819-d2c3d2b6b4c7"/>
+    <div class="text">
+     I'm never leaving my room
+    </div>
+    <a class="read-post" href="#">
+     READ POST
+    </a>
+   </div>
+  </div>
+  <button class="access-btn">
+   Request edit access
+  </button>
+ </body>
+</html>

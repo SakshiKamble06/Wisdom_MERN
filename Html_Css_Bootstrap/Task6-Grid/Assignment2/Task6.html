@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Hover Zoom</title>
+
+<style>
+body{
+    margin:0;
+    padding:40px;
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    font-family:Arial, sans-serif;
+}
+
+/* Grid Container */
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: 200px;
+    gap:15px;
+}
+
+/* Image Box
+.gallery div{
+    overflow:hidden;
+    border-radius:12px;
+}
+
+/* Image Style */
+.gallery img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition: transform 0.4s ease;
+}
+
+/* Hover Effect */
+.gallery div:hover img{
+    transform: scale(1.2);
+} 
+</style>
+</head>
+<body>
+
+<div class="gallery">
+    <div><img src="./Assets/2.jpg"></div>
+    <div><img src="./Assets/1.jpg"></div>
+    <div><img src="./Assets/3.jpg"></div>
+    <div><img src="./Assets/4.jpg"></div>
+    <div><img src="./Assets/5.jpg"></div>
+    <div><img src="./Assets/6.jpg"></div>
+    <div><img src="./Assets/7.jpg"></div>
+    <div><img src="./Assets/8.jpg"></div>
+    <div><img src="./Assets/9.jpg"></div>
+</div>
+
+</body>
+</html>
