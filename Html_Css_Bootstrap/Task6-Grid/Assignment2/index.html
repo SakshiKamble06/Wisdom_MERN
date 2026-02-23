@@ -91,7 +91,12 @@
                                 'leftSide mai mai rightSide'
                                 'foo foo foo foo'
             ;  
-
+            border: 1px solid black ;
+         
+        } 
+        .gridContainerLayout h1{
+            justify-items: center;
+            text-align: center;
         }
         header{
             grid-area: headerOne;
@@ -147,12 +152,12 @@
     <h1 class="heading">Learn Grid</h1>
     <img src="./assets/nature.jpeg" alt="imgNature" class="headerImg" />
     <div class="gridContainerLayout">
-        <header></header>
-        <nav></nav>
-        <aside class="asideLeft"></aside>
-        <main></main>
-        <aside class="asideRight"></aside>
-        <footer></footer>
+        <header style="border: 1px solid black;">  <h1>HEADER</h1></header>
+        <nav><h1> Navigation Menu</h1></nav>
+        <aside class="asideLeft"> <h1>Aside</h1></aside>
+        <main><h1>Main</h1></main>
+        <aside class="asideRight"> <h1>Aside right</h1></aside>
+        <footer><h1>footer</h1></footer>
 
     </div>
     <div class="griContainerFruit">

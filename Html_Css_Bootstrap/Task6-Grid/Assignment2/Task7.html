@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    .gridContainerLayout{
+            display: grid; 
+            grid-template-areas: 'headerOne headerOne headerOne headerOne'
+                                'Navbar Navbar Navbar Navbar'
+                                'leftSide mai mai rightSide'
+                                'foo foo foo foo'
+            ;  
+          gap: 10px;
+         
+        } 
+        .gridContainerLayout h1{
+            justify-items: center;
+            text-align: center;
+        }
+        header{
+            grid-area: headerOne;
+            height: 100px;
+              border: 2px solid black ;
+        }
+        nav{
+            grid-area: Navbar;
+            height: 90px;
+            background-color: rgb(218, 218, 255);
+              border: 2px solid black ;
+        }
+        .asideLeft{
+            grid-area: leftSide;
+            height: 300px;
+             border: 2px solid black ;
+        }
+        main{
+            grid-area: mai;
+            height: 300px;
+              border: 2px solid black ;
+        }
+        .asideRight{
+            grid-area: rightSide;
+            height: 300px;
+             border: 2px solid black ;
+        }
+        footer{
+            grid-area: foo;
+            height: 100px;
+            background-color: gray;
+              border: 2px solid black ;
+        }
+         @media screen and (max-width:600px){
+                body{
+                    background-color: pink;
+                }
+                
+                .gridContainerLayout{
+                               grid-template-areas: 'headerOne'
+                                'Navbar'
+                                'mai'
+                                'leftSide'
+                                'rightSide'
+                                'foo'
+            ;
+                }
+        }
+        </style>
+</head>
+<body>
+    <!-- <h1 class="heading">Learn Grid</h1>
+    <img src="./assets/nature.jpeg" alt="imgNature" class="headerImg" /> -->
+    <div class="gridContainerLayout">
+        <header style="border: 1px solid black;">  <h1>HEADER</h1></header>
+        <nav><h1> Navigation Menu</h1></nav>
+        <aside class="asideLeft"> <h1>Aside</h1></aside>
+        <main><h1>Main</h1></main>
+        <aside class="asideRight"> <h1>Aside right</h1></aside>
+        <footer><h1>footer</h1></footer>
+
+    </div>
+</body>
+</html>

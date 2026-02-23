@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Grid Layout</title>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    background: #d4a017;   /* yellow background */
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap:30px;
+    background-image: url("./assets/natureImg.jpeg");
+    background-size: 420px 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+/* Common circle style */
+.item {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    width: 200px;
+    height:  200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 9px solid #d4a017;
+    margin-top: 20px;
+
+   
+}
+
+/* Positioning using Grid */
+.item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.item3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.item4 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.item5 {
+    grid-column: 3;
+    grid-row: 3;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item item1">
+        <img src="./Assets/Bear.jpg" alt="">
+    </div>
+
+    <div class="item item2">
+        <img src="./Assets/Wolf.jpg" alt="">
+    </div>
+
+    <div class="item item3">
+        <img src="./Assets/lion.jpg" alt="">
+    </div>
+
+    <div class="item item4">
+        <img src="./Assets/Tiger.jpg" alt="">
+    </div>
+
+    <div class="item item5">
+        <img src="./Assets/Bear.jpg" alt="">
+    </div>
+</div>
+
+</body>
+</html>
