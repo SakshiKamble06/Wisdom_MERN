@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival</title>
+    <style>
+        body{
+        
+          background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 49%);
+        }
+        header{
+            background-color: rgb(162, 9, 9);
+        }
+        .hero h3{
+              color: white;            
+             
+        }
+        .hero{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        border-color: red;
+        
+     }
+     /* .hero:hover{
+         border: red;
+     } */
+     .cardsec{
+        display: flex;
+        margin: 40px;
+        padding: 40px 10px;
+        gap: 10px;
+        justify-content: center;
+        }
+     .card{
+      background-color:rgb(25, 25,51);
+        border: 1px solid black;
+        width: 17vw;
+        height: 100vh;
+       text-align: center;
+        padding: 0px 10px;
+        border-radius: 20px;   
+      
+    }
+
+
+/* Accordian */
+.accordion-item{
+ background-color:rgb(25, 25,51);
+ 
+}
+    /* Footer */
+    footer{
+      padding-top: 50px;
+      justify-items: center;
+      height: 200px;
+      background-color: rgb(18,13,29);
+      margin-bottom: 0;
+    }
+    .icon{
+      font-size: 35px;
+      color: rgb(204, 23, 102);
+      display: flex;
+      padding-top: 1rem;
+    }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header><h1>  Electric Vibe Music Festival 2025 </h1></header>
+
+
+    <section class="Hoverdiv">
+        <div class="hero">
+        <div class=" border border-black me-2"><h3>DJ Nov</h3></div>
+        <div class=" border border-black"><h3>Electric Beats</h5></div>
+        <div class=" border border-black"><h3>SynthStorm</h3></div>
+        <div class=" border border-black"><h3>Lunar Bass</h3></div>
+        <div class=" border border-black"><h3>GlowRiders</h3></div>
+        </div>
+    </section>
+<!-- Card Section  -->
+ <section class="cardsec">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Standard</h5>
+            <p class="card-text">$49</p>
+            <a href="#" class="btn btn-danger">Buy Now</a>
+    </div>
+  </div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">VIP</h5>
+    <p class="card-text">$99</p>
+    <a href="#" class="btn btn-danger">Buy Now</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Backstage</h5>
+    <p class="card-text">$149</p>
+    <a href="#" class="btn btn-danger">Live Now</a>
+  </div>
+</div>
+    </section>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        No Outside Food
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+       <p>Please refrain outside food or beverages to ensure safety and hygiene.</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Re-entry Policy
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body">
+       <p>No re-entry allowed once you've exited the festival grounds.</p> 
+      </div>
+    </div>
+  </div>
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+       Photography
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body">
+       
+      </div>
+    </div>
+</div>
+<footer><h1 class="text-white">Follow us</h1>
+  <div class="icon">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+</div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
