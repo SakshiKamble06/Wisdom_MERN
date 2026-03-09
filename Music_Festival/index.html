@@ -1,154 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Festival</title>
-    <style>
-        body{
-        
-          background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 49%);
-        }
-        header{
-            background-color: rgb(162, 9, 9);
-        }
-        .hero h3{
-              color: white;            
-             
-        }
-        .hero{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 10px;
-        border-color: red;
-        
-     }
-     /* .hero:hover{
-         border: red;
-     } */
-     .cardsec{
-        display: flex;
-        margin: 40px;
-        padding: 40px 10px;
-        gap: 10px;
-        justify-content: center;
-        }
-     .card{
-      background-color:rgb(25, 25,51);
-        border: 1px solid black;
-        width: 17vw;
-        height: 100vh;
-       text-align: center;
-        padding: 0px 10px;
-        border-radius: 20px;   
-      
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Electric Vibe Music Festival</title>
 
-/* Accordian */
-.accordion-item{
- background-color:rgb(25, 25,51);
- 
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(180deg,#0d0f2d,#1a1c4d);
+color:white;
+text-align:center;
 }
-    /* Footer */
-    footer{
-      padding-top: 50px;
-      justify-items: center;
-      height: 200px;
-      background-color: rgb(18,13,29);
-      margin-bottom: 0;
-    }
-    .icon{
-      font-size: 35px;
-      color: rgb(204, 23, 102);
-      display: flex;
-      padding-top: 1rem;
-    }
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+/* HEADER */
+
+.header{
+background:#ff0f5a;
+padding:15px;
+font-size:22px;
+font-weight:600;
+}
+
+/* EQUALIZER */
+
+.equalizer{
+display:flex;
+justify-content:center;
+align-items:flex-end;
+gap:6px;
+margin:30px 0;
+}
+
+.equalizer div{
+width:6px;
+height:20px;
+background:#00ff88;
+animation:music 1s infinite ease-in-out;
+}
+
+.equalizer div:nth-child(2){animation-delay:0.2s;}
+.equalizer div:nth-child(3){animation-delay:0.4s;}
+.equalizer div:nth-child(4){animation-delay:0.6s;}
+.equalizer div:nth-child(5){animation-delay:0.8s;}
+
+@keyframes music{
+
+0%{height:10px;}
+50%{height:35px;}
+100%{height:10px;}
+
+}
+
+/* Artist Buttons */
+
+.artist-btn{
+border:1px solid #ff0f5a;
+color:white;
+background:transparent;
+}
+
+.artist-btn:hover{
+background:#ff0f5a;
+color:white;
+}
+
+/* Ticket Cards */
+
+.ticket-card{
+background:transparent;
+border:1px solid rgba(255,255,255,0.4);
+border-radius:10px;
+height: 170px;
+}
+
+.buy-btn{
+background:red;
+border:none;
+}
+
+/* Live Button */
+
+.live-btn{
+background:red;
+animation:glow 1s infinite alternate;
+}
+
+@keyframes glow{
+
+from{box-shadow:0 0 5px red;}
+to{box-shadow:0 0 20px red;}
+
+}
+
+/* Accordion */
+
+.accordion-button{
+background:#10123a;
+color:white;
+}
+
+.accordion-body{
+background:#10123a;
+color:white;
+}
+
+
+.ticket-card h5{
+color:white;
+font-weight:600;
+}
+
+.ticket-card p{
+color:white;
+}
+
+/* Footer */
+
+.footer{
+background:#0b0d2a;
+color:white;
+}
+
+.social-icons a{
+color:white;
+font-size:22px;
+margin:0 15px;
+transition:0.3s;
+color: rgb(179, 27, 111);
+}
+
+.social-icons a:hover{
+color:#ff0f5a;
+transform:scale(1.2);
+}
+
+
+</style>
+
 </head>
+
 <body>
-    <header><h1>  Electric Vibe Music Festival 2025 </h1></header>
+
+<!-- HEADER -->
+<div class="header">
+ Electric Vibe Music Festival 2025 
+</div>
 
 
-    <section class="Hoverdiv">
-        <div class="hero">
-        <div class=" border border-black me-2"><h3>DJ Nov</h3></div>
-        <div class=" border border-black"><h3>Electric Beats</h5></div>
-        <div class=" border border-black"><h3>SynthStorm</h3></div>
-        <div class=" border border-black"><h3>Lunar Bass</h3></div>
-        <div class=" border border-black"><h3>GlowRiders</h3></div>
-        </div>
-    </section>
-<!-- Card Section  -->
- <section class="cardsec">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Standard</h5>
-            <p class="card-text">$49</p>
-            <a href="#" class="btn btn-danger">Buy Now</a>
-    </div>
-  </div>
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">VIP</h5>
-    <p class="card-text">$99</p>
-    <a href="#" class="btn btn-danger">Buy Now</a>
-  </div>
+<!-- EQUALIZER -->
+<div class="equalizer">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 </div>
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Backstage</h5>
-    <p class="card-text">$149</p>
-    <a href="#" class="btn btn-danger">Live Now</a>
-  </div>
+
+
+<!-- ARTISTS -->
+<div class="container mb-5">
+
+<div class="row justify-content-center g-3">
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-300">DJ Nova</button>
 </div>
-    </section>
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        No Outside Food
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-      <div class="accordion-body">
-       <p>Please refrain outside food or beverages to ensure safety and hygiene.</p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-        Re-entry Policy
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-      <div class="accordion-body">
-       <p>No re-entry allowed once you've exited the festival grounds.</p> 
-      </div>
-    </div>
-  </div>
-   <div class="accordion-item">
-    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-       Photography
-      </button>
-    </h2>
-    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-      <div class="accordion-body">
-       
-      </div>
-    </div>
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-300">Electric Beats</button>
 </div>
-<footer><h1 class="text-white">Follow us</h1>
-  <div class="icon">
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-instagram"></i>
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-300">SynthStorm</button>
 </div>
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-300">Lunar Bass</button>
+</div>
+
+<div class="col-md-auto col-10">
+<button class="btn artist-btn w-300">GlowRiders</button>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- TICKETS -->
+
+<div class="container mb-5">
+
+<div class="row justify-content-center g-4">
+
+<div class="col-md-3 col-10">
+
+<div class="card ticket-card text-center p-3">
+
+<h5>Standard</h5>
+<p>$49</p>
+
+<button class="btn buy-btn text-white">Buy Now</button>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3 col-10">
+
+<div class="card ticket-card text-center p-3">
+
+<h5>VIP</h5>
+<p>$99</p>
+
+<button class="btn buy-btn text-white">Buy Now</button>
+
+</div>
+
+</div>
+
+
+<div class="col-md-3 col-10">
+
+<div class="card ticket-card text-center p-3">
+
+<h5>Backstage</h5>
+<p>$149</p>
+
+<button class="btn live-btn text-white">Live Now</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RULES ACCORDION -->
+
+<div class="container">
+
+<div class="accordion" id="festivalRules">
+
+<div class="accordion-item border-0">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#rule1">
+
+No Outside Food
+
+</button>
+
+</h2>
+
+<div id="rule1" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+Outside food and beverages are not allowed inside the festival area.
+
+</div>
+
+</div>
+
+</div><br>
+
+
+<div class="accordion-item border-0">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#rule2">
+
+Re-entry Policy
+
+</button>
+
+</h2>
+
+<div id="rule2" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+
+No re-entry allowed once you've exited the festival grounds.
+
+</div>
+
+</div>
+
+</div>
+<br>
+<div class="accordion-item border-0">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#rule2">
+ Photography
+
+</button>
+
+</h2>
+
+<div id="rule2" class="accordion-collapse collapse">
+
+<div class="accordion-body">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, fugiat?
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class="footer text-center mt-5 py-4">
+
+<div class="container">
+
+<h5 class="mb-3">Follow Us</h5>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-twitter"></i></a>
+
+</div>
+
+<p class="mt-3 mb-0">© 2025 Electric Vibe Music Festival</p>
+
+</div>
+
 </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
